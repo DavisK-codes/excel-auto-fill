@@ -1,6 +1,7 @@
 # excel-auto-fill
 
 This Python script processes and formats Excel files. It extracts data from a given Excel file, inserts the extracted data into a template, applies styles and formatting, locks certain cells for protection, and saves the modified file. The script also handles both `.xls` and `.xlsx` file formats.
+Note: The script is currently designed to work with a specific input file and template. If different files are used, the code may need modifications to ensure compatibility.
 
 ## Features
 
