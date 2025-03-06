@@ -207,7 +207,7 @@ for item in item_list:
 additional_info_lines = data['additional_information'].split('\n')  
 num_lines = len(additional_info_lines)
 # Calculate row height based on the number of lines
-line_height = 21.5  
+line_height = 17.5 
 calculated_height = num_lines * line_height
 
 # Adjust the row height dynamically
@@ -229,7 +229,7 @@ wb_output = openpyxl.load_workbook(output_file)
 ws_output = wb_output.active 
 
 # Define font, alignment, and border style
-audrey_font = Font(name='Audrey', size=11)
+tahoma_font  = Font(name='Tahoma', size=11)
 border_style = Border(
     left=Side(style='thin', color="E4E0D8"),
     right=Side(style='thin', color="E4E0D8"),
@@ -250,14 +250,14 @@ for idx, item in enumerate(item_list):
 
     # Item Number (A column)
     cell = ws_output[f'A{row}']
-    cell.font = audrey_font
+    cell.font = tahoma_font
     cell.alignment = center_align
     cell.border = border_style
     cell.value = item['item_number']
 
     # Description (B, C, D columns)
     cell = ws_output[f'B{row}']
-    cell.font = audrey_font
+    cell.font = tahoma_font
     cell.alignment = left_align
     cell.border = border_style
     cell.value = item['description'].upper() if isinstance(item['description'], str) else item['description']  # Only upper if it's a string
@@ -265,35 +265,35 @@ for idx, item in enumerate(item_list):
 
     # Code Maker Ref (E column)
     cell = ws_output[f'E{row}']
-    cell.font = audrey_font
+    cell.font = tahoma_font
     cell.alignment = middle_left_align
     cell.border = border_style
     cell.value = item['code_maker_ref'].upper() if isinstance(item['code_maker_ref'], str) else item['code_maker_ref']
     
     # Part Nr Maker (F column)
     cell = ws_output[f'F{row}']
-    cell.font = audrey_font
+    cell.font = tahoma_font
     cell.alignment = middle_left_align
     cell.border = border_style
     cell.value = item['part_nr_maker'].upper() if isinstance(item['part_nr_maker'], str) else item['part_nr_maker']
     
     # Part Type (G column)
     cell = ws_output[f'G{row}']
-    cell.font = audrey_font
+    cell.font = tahoma_font
     cell.alignment = middle_left_align
     cell.border = border_style
     cell.value = item['part_type'].upper() if isinstance(item['part_type'], str) else item['part_type']
     
     # Serial Nr (H column)
     cell = ws_output[f'H{row}']
-    cell.font = audrey_font
+    cell.font = tahoma_font
     cell.alignment = middle_left_align
     cell.border = border_style
     cell.value = item['serial_nr'].upper() if isinstance(item['serial_nr'], str) else item['serial_nr'] 
 
     # Quantity (I column)
     cell = ws_output[f'I{row}']
-    cell.font = audrey_font
+    cell.font = tahoma_font
     cell.alignment = center_align
     cell.border = border_style
     cell.value = item['qty']
@@ -301,7 +301,7 @@ for idx, item in enumerate(item_list):
     # Collumns J - N
     for col in range (10, 15):
         cell = ws_output.cell(row=row, column=col)
-        cell.font = audrey_font
+        cell.font = tahoma_font
         cell.alignment = center_align
         cell.border = border_style
     
