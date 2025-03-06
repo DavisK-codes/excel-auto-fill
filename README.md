@@ -26,16 +26,16 @@ pip install openpyxl pandas xlrd
 ## How to Use the Program
 
 ### Windows
-1.Double-click on the `excel-auto-fill.py` file to run the program.
-2.The program will prompt you to enter the file name.
-3.The program will automatically process the input file, generate the output, and open it in Excel.
+1. Double-click on the `excel-auto-fill.py` file to run the program.
+2. The program will prompt you to enter the file name.
+3. The program will automatically process the input file, generate the output, and open it in Excel.
 ### macOS
 1. Open **Terminal**.
 2. Navigate to the directory where the `excel-auto-fill.py` file is located using the `cd` command:
    ```bash
    cd /path/to/your/program
 3. Run the program using the following command: 
-     ```bash
+   ```bash
    python3 excel-auto-fill.py
    ```
 4.The program will prompt you to enter the file name.
