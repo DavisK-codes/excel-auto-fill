@@ -38,7 +38,7 @@ pip install openpyxl pandas xlrd
    ```bash
    python3 excel-auto-fill.py
    ```
-4.The program will prompt you to enter the file name.
+4. The program will prompt you to enter the file name.
 5. The program will automatically process the input file, generate the output, and open it in Excel.
 
 ## Future Upgrades
