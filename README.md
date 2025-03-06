@@ -21,6 +21,7 @@ You can install the necessary packages with:
 
 ```bash
 pip install openpyxl pandas xlrd
+```
 
 ## How to Use the Program
 
