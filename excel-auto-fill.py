@@ -207,7 +207,7 @@ for item in item_list:
 additional_info_lines = data['additional_information'].split('\n')  
 num_lines = len(additional_info_lines)
 # Calculate row height based on the number of lines
-line_height = 17.5 
+line_height = 14.5
 calculated_height = num_lines * line_height
 
 # Adjust the row height dynamically
